@@ -38,12 +38,12 @@ func main(){
   fmt.Print("\033[31m' + '║\033[38;5;123m ║║║║ ║║╠╦╝╠═╣\033[38;5;123m║")
   fmt.Print("\033[31m' + '║\033[38;5;123m ╩╝╚╝═╩╝╩╚═╩ ╩\033[38;5;123m║")
   fmt.Print("\033[31m' + '║══════════════════════════════════╝")
-  fmt.Print("\033[31m' + '║ \x1b[38;5;129m DEV    \x1b[31m: \x1b[31m[\x1b[38;5;123mNgThanhVinh      \x1b[31m]")
-  fmt.Print("\033[31m' + '║ \x1b[38;5;129m Zalo   \x1b[31m: \x1b[31m[\x1b[38;5;123m0927423139       \x1b[31m]")
-  fmt.Print("\033[31m' + '║ \x1b[38;5;129mFaceBook\x1b[31m: \x1b[31m[\x1b[38;5;123mNgThanhVinhxDeath\x1b[31m]")
-  fmt.Print("\033[31m' + '║ \x1b[38;5;129m Tele   \x1b[31m: \x1b[31m[\x1b[38;5;123m@Vinhyetquaidan  \x1b[31m]")
-  fmt.Print("\033[31m' + '║ \x1b[38;5;129m        Đang Tấn Công, Đéo Spam Okay ?                    \x1b[31m]")
-  fmt.Print("\033[31m' + '╚══════════════════════════════════")
+  fmt.Print("\033[31m' + '║ \x1b[38;5;129m DEV \x1b[31m: \x1b[31m[\x1b[38;5;123mNgThanhVinh\x1b[31m]")
+  fmt.Print("\033[31m' + '║ \x1b[38;5;129m Zalo\x1b[31m: \x1b[31m[\x1b[38;5;123m0927423139\x1b[31m]")
+  fmt.Print("\033[31m' + '║ \x1b[38;5;129m FB  \x1b[31m:\x1b[31m[\x1b[38;5;123mNgThanhVinhxDeath\x1b[31m]")
+  fmt.Print("\033[31m' + '║ \x1b[38;5;129m Tele\x1b[31m: \x1b[31m[\x1b[38;5;123m@Vinhyetquaidan \x1b[31m]")
+  fmt.Print("\033[31m' + '║ \x1b[38;5;129m        Đang Tấn Công, Đéo Spam Okay ?           \x1b[31m]")
+  fmt.Print("\033[31m' + '╚══════════════════════════════════>")
    for i:=0; i < threads; i++{
      go httpflood()
    }
