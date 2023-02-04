@@ -32,8 +32,7 @@ func main(){
   target.url = os.Args[1]
   target.method = os.Args[2]
   threads, _ := strconv.Atoi(os.Args[3])
-  Print(Fore.RED +"Đang Khởi Động")
-    clear()
+  Print(Fore.RED +"Đang Khởi Động                           ")
   Print(Fore.RED +" [..              [..                    ") 
   Print(Fore.RED +" [..              [..                    ")
   Print(Fore.RED +" [..[.. [..       [..[. [...   [..       ") 
