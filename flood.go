@@ -32,7 +32,7 @@ func main(){
   target.url = os.Args[1]
   target.method = os.Args[2]
   threads, _ := strconv.Atoi(os.Args[3])
-  fmt.Print("Đang Khởi Động")
+  log.Print("Đang Khởi Động")
   fmt.Print(" [..              [..") 
   fmt.Print(" [..              [.. ")
   fmt.Print(" [..[.. [..       [..[. [...   [.. ") 
