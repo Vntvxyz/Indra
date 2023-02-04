@@ -1,10 +1,10 @@
 package main
-
+import "fmt"
 import(
   "crypto/tls"
   "os"
   "strconv"
-  "fmt"
+  "log"
   "github.com/valyala/fasthttp"
 )
 var target struct{
