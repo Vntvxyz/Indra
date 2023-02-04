@@ -40,8 +40,8 @@ func main(){
          [.. [..  [.. [.. [.. [..    [..  [.. 
          [.. [..  [..[.   [.. [..   [..   [.. 
          [.. [..  [..[.   [.. [..   [..   [.. 
-         [..[...  [.. [.. [..[...     [.. [... ")
-   log.Print("          Tấn Công DDoS Flood By NTV ")
+         [..[...  [.. [.. [..[...     [.. [... 
+                    Tấn Công DDoS Flood By NTV ")
    for i:=0; i < threads; i++{
      go httpflood()
    }
