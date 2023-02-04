@@ -34,21 +34,14 @@ func main(){
   target.url = os.Args[1]
   target.method = os.Args[2]
   threads, _ := strconv.Atoi(os.Args[3])
-  log.Print("Bắt Đầu...")
-panel = """
-         [..              [..                 
+  log.Print("                               
          [..              [..                 
          [..[.. [..       [..[. [...   [..    
          [.. [..  [.. [.. [.. [..    [..  [.. 
          [.. [..  [..[.   [.. [..   [..   [.. 
          [.. [..  [..[.   [.. [..   [..   [.. 
-         [..[...  [.. [.. [..[...     [.. [...
-                                                                                            
-                                                      LEGEND POWER DDOS BY NGUYỄN THÀNH VINH
-"""
-print(Colorate.Diagonal(Colors.red_to_yellow, Center.XCenter(panel)))
-print()
-host=input(Colorate.Diagonal(Colors.red_to_yellow, "   Đang Tấn Công: "))
+         [..[...  [.. [.. [..[...     [.. [... 
+             Tấn Công DDoS Flood By NTV ")
     go httpflood()
   }
 
