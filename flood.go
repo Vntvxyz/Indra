@@ -4,7 +4,7 @@ import(
   "crypto/tls"
   "os"
   "strconv"
-
+  "Print"
   "github.com/valyala/fasthttp"
 )
 var target struct{
