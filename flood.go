@@ -32,7 +32,7 @@ func main(){
   target.url = os.Args[1]
   target.method = os.Args[2]
   threads, _ := strconv.Atoi(os.Args[3])
-  log.Print("Được Tính Theo Giờ UTC")
+  log.Print(Back.BLACK + "Được Tính Theo Giờ UTC")
   fmt.Print("\033[31m' + '::::::::::: ::::    ::: :::::::::  :::::::::      :::   ") 
   fmt.Print("\033[31m' + '    :+:     :+:+:   :+: :+:    :+: :+:    :+:   :+: :+: ")
   fmt.Print("\033[31m' + '    +:+     :+:+:+  +:+ +:+    +:+ +:+    +:+  +:+   +:+") 
